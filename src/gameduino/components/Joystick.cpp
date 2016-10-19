@@ -27,5 +27,25 @@ void Joystick::update()
     }
 
     x = map(rawX, 0, 1023, -100, 100);
-    y = map(rawY, 0, 1023, -100, 100);
+    y = map(rawY, 0, 1023, 100, -100);
+}
+
+int Joystick::leftStroke()
+{
+    return x;
+}
+
+int Joystick::rightStroke()
+{
+    return abs(x);
+}
+
+int Joystick::upStroke()
+{
+    return y;
+}
+
+int Joystick::downStroke()
+{
+    return abs(y);
 }

@@ -15,6 +15,11 @@ public:
 
     void begin();
     void update();
+
+    int leftStroke();
+    int rightStroke();
+    int upStroke();
+    int downStroke();
 };
 
 #endif
