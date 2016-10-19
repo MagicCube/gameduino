@@ -7,8 +7,6 @@
 #include "../../gameduino/scenes/EngineeringModeScene.h"
 #include "MainScene.h"
 
-EngineeringModeScene engineeringModeScene;
-
 GameConsole console;
 
 void setup()
@@ -19,6 +17,5 @@ void setup()
 void loop()
 {
     console.update();
-    engineeringModeScene.update(console);
     console.render();
 }
