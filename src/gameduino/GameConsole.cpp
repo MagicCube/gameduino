@@ -19,6 +19,8 @@ void GameConsole::begin()
     buzzer.beep();
 
     delay(800);
+
+    display.clearDisplay();
 }
 
 void GameConsole::update()

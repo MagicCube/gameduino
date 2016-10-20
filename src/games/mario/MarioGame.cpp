@@ -8,6 +8,7 @@
 #include "MainScene.h"
 
 GameConsole console;
+EngineeringModeScene mainScene;
 
 void setup()
 {
@@ -17,5 +18,6 @@ void setup()
 void loop()
 {
     console.update();
+    mainScene.update(console);
     console.render();
 }
